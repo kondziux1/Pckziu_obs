@@ -1,0 +1,12 @@
+body{
+    color: rgb(255, 0, 0);
+    background-color: none;
+}
+#container{
+    transition: all 1s ease;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    opacity: 100%;
+}
