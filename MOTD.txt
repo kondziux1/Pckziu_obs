@@ -1,5 +1,2 @@
 $time
-Pckziu to fajowa szkoła
-$date
-lubie jom
-bardzo
+$imieniny
