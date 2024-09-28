@@ -1,4 +1,4 @@
-var displaytime = 3; //  aka display time in sec
+var displaytime = 5; //  aka display time in sec
 var transitontime = 1; // match with transition from css
 var numberofimieninki = 3;
 const args = ['$time','$date','$imieniny']; //args can be used as motd line
@@ -55,14 +55,15 @@ function fade() {
 }
 
 function changetext() {
+    if (slideshowcount >= MOTD.length) {
+        slideshowcount = 0;}
     container.innerHTML = MOTD[slideshowcount];
     parseargs()
     slideshowcount++;
 }
 //ultra nie optymalne
 function parseargs() {
-    if (slideshowcount >= MOTD.length) {
-        slideshowcount = 0;}
+    
     clearInterval(timeinterval);
     for (let j = 0; j < args.length; j++) {
         if (MOTD[slideshowcount] == args[j]) {
